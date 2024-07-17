@@ -1,0 +1,107 @@
+
+body {
+margin: 0;
+font-family: 'Arial', sans-serif;
+display: flex;
+height: 100vh;
+overflow: hidden;
+}
+
+.sidebar-menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    display: block;
+    transition: all 0.3s ease;
+    padding: 15px 20px;
+    background-color: #333; /* warna latar belakang teks */
+}
+
+.sidebar-menu li a:hover {
+    background-color: #4CAF50; /* warna latar belakang teks saat hover */
+}
+
+
+.sidebar {
+width: 250px;
+background: #333;
+color: #fff;
+position: relative;
+transition: width 0.3s;
+}
+
+.sidebar-header {
+padding: 20px;
+background: #444;
+text-align: center;
+}
+
+.sidebar-menu {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.sidebar-menu li {
+padding: 15px 20px;
+}
+
+.sidebar-menu li a {
+color: #fff;
+text-decoration: none;
+display: block;
+}
+
+.sidebar-menu li a:hover {
+background: #555;
+}
+
+.main-content {
+flex-grow: 1;
+background: #f4f4f4;
+padding: 20px;
+}
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: #fff;
+padding: 10px 20px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-btn {
+display: none;
+cursor: pointer;
+}
+
+.toggle-btn span {
+display: block;
+width: 25px;
+height: 3px;
+margin: 5px;
+background: #333;
+}
+
+@media (max-width: 768px) {
+.sidebar {
+    width: 60px;
+}
+
+.sidebar-menu li {
+    text-align: center;
+}
+
+.sidebar-menu li a {
+    padding: 15px 10px;
+}
+
+.sidebar-header h2 {
+    font-size: 18px;
+}
+
+.toggle-btn {
+    display: block;
+}
+}
